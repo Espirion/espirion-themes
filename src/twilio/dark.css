@@ -1,0 +1,73 @@
+/* Twilio Dark Theme for Espirion Design System */
+[data-theme="twilio-dark"] {
+  /* ===== Colors ===== */
+  --esp-color-background: #0a0a0a; /* Canvas background */
+  --esp-color-surface: #121212; /* Surface cards/panels */
+  --esp-color-text-primary: #f4f4f6; /* Primary text */
+  --esp-color-text-secondary: #a3a3a8; /* Secondary text */
+  --esp-color-text-placeholder: #6b6b70; /* Placeholder text */
+  --esp-color-text-disabled: #3f3f44; /* Disabled text */
+  --esp-color-border-default: #26262a; /* Default border */
+  --esp-color-border-muted: #1c1c1f; /* Muted border */
+  --esp-color-primary: #e52e5b; /* Brand primary */
+  --esp-color-primary-hover: #c01f47; /* Primary hover */
+  --esp-color-error: #ff4f61; /* Error */
+  --esp-color-warning: #ffac33; /* Warning */
+  --esp-color-success: #32d583; /* Success */
+  --esp-color-info: #5fb3f3; /* Info */
+
+  /* ===== Typography ===== */
+  --esp-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --esp-font-size-base: 16px;
+  --esp-font-size-sm: 14px;
+  --esp-font-size-lg: 20px;
+  --esp-font-weight-normal: 400;
+  --esp-font-weight-semibold: 600;
+  --esp-line-height-base: 1.6;
+
+  /* ===== Spacing ===== */
+  --esp-spacing-xs: 4px;
+  --esp-spacing-sm: 8px;
+  --esp-spacing-md: 16px;
+  --esp-spacing-lg: 24px;
+  --esp-spacing-xl: 32px;
+
+  /* ===== Borders & Radius ===== */
+  --esp-border-radius-sm: 3px;
+  --esp-border-radius-md: 6px;
+  --esp-border-width: 1px;
+  --esp-border-style: solid;
+
+  /* ===== Shadows ===== */
+  --esp-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --esp-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --esp-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+  /* ===== Component Tokens ===== */
+  --esp-button-bg: var(--esp-color-primary);
+  --esp-button-bg-hover: var(--esp-color-primary-hover);
+  --esp-button-text: #ffffff;
+  --esp-button-border: transparent;
+  --esp-button-radius: var(--esp-border-radius-md);
+
+  --esp-link-color: var(--esp-color-primary);
+  --esp-link-hover: var(--esp-color-primary-hover);
+
+  --esp-input-bg: var(--esp-color-surface);
+  --esp-input-border: var(--esp-color-border-default);
+  --esp-input-text: var(--esp-color-text-primary);
+  --esp-input-placeholder: var(--esp-color-text-placeholder);
+  --esp-input-focus-ring: var(--esp-color-primary);
+
+  --esp-surface-shadow: var(--esp-shadow-sm);
+
+  /* ===== Backgrounds ===== */
+  --esp-background-base: var(--esp-color-background);
+  --esp-surface-base: var(--esp-color-surface);
+
+  /* ===== Text Colors ===== */
+  --esp-text-base: var(--esp-color-text-primary);
+  --esp-text-muted: var(--esp-color-text-secondary);
+  --esp-text-disabled: var(--esp-color-text-disabled);
+}
