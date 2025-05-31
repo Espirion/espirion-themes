@@ -1,5 +1,5 @@
-@import url('./dark.css');
-@import url('./light.css');
+@import './dark.css';
+@import './light.css';
 
 :root {
       /* ===== Typography ===== */
