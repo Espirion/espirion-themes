@@ -1,34 +1,53 @@
-name: Release Package
+name: Release Espirion Themes
 
 on:
-  release:
-    types: [published]  # Only triggers when a release is actually published
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*' # Triggers only on Git tags like v1.0.0
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: 🔄 Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required to access tags
 
-      - name: Use Node.js
+      - name: 🟢 Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
-          registry-url: "https://registry.npmjs.org/"
-          scope: '@espirion'
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+          scope: "@espirion"
+
+      - name: 🔐 Configure NPM token
+        run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.ESPIRION_DEPLOY_NPM_TOKEN }}
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build Themes
+      - name: 🛠️ Build Espirion Themes
         run: npm run build
 
-      - name: Bump patch version
+      - name: 🔍 Read Git tag version
+        id: get_tag
+        run: echo "TAG_VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
+
+      - name: ⬆️ Bump version (patch)
         run: npm version patch --no-git-tag-version
 
-      - name: Publish to NPM
+      - name: 💾 Commit new version
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add package.json package-lock.json
+          git commit -m "🔖 Bump version to $(node -p \"require('./package.json').version\")"
+          git push origin HEAD
+
+      - name: 🚀 Publish to npm
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ESPIRION_DEPLOY_NPM_TOKEN }}
