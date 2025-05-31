@@ -1,0 +1,153 @@
+/* Base Colors for light mode */
+[data-theme="twilio-light"] {
+      --esp-color-scheme: "light";
+      --esp-color-primary: #0263E0;
+      --esp-color-secondary: #8891AA;
+      --esp-color-background: #FFFFFF;
+      --esp-color-surface: #F4F9FF;
+      --esp-color-border: #8B93AA;
+      --esp-color-text: #121C2D;
+      --esp-color-success: #0B602D;
+      --esp-color-warning: #8D3118;
+      --esp-color-error: #C72323;
+
+      --esp-color-focus: #0969da;
+
+      --esp-color-border-muted: #424a53;
+      --esp-color-border-subtle: #32383f;
+
+      /* ===== Shadows ===== */
+      --esp-color-shadow-sm: 0 1px 0 rgb(27 31 36 / 0.04);
+      --esp-color-shadow-md: 0 3px 6px rgb(140 149 159 / 0.15);
+      --esp-color-shadow-lg: 0 8px 24px rgb(140 149 159 / 0.2);
+}
+
+/* Base Colors for dark mode */
+[data-theme="twilio-dark"] {
+      --esp-color-scheme: "dark";
+      --esp-color-primary: #008CFF;
+      --esp-color-secondary: #606B85;
+      --esp-color-background: #0D131C;
+      --esp-color-surface: #18253C;
+      --esp-color-border: #606B85;
+      --esp-color-text: #F4F4F6;
+      --esp-color-success: #A2F6C3;
+      --esp-color-warning: #FFB37A;
+      --esp-color-error: #EC5B5B;
+
+      --esp-color-focus: #58a6ff;
+
+      --esp-color-border-muted: #21262d;
+      --esp-color-border-subtle: #161b22;
+
+      /* ===== Shadows ===== */
+      --esp-color-shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.12);
+      --esp-color-shadow-md: 0 3px 6px rgba(0, 0, 0, 0.3);
+      --esp-color-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+:root {
+      /* ===== Spacing ===== */
+      --esp-spacing-xxs: 4px;
+      --esp-spacing-xs: 8px;
+      --esp-spacing-sm: 12px;
+      --esp-spacing-md: 16px;
+      --esp-spacing-lg: 24px;
+      --esp-spacing-xl: 32px;
+
+      /* Spacing & Sizing */
+      --esp-size-xxs: 2px;
+      --esp-size-xs: 4px;
+      --esp-size-sm: 8px;
+      --esp-size-md: 16px;
+      --esp-size-lg: 24px;
+      --esp-size-xl: 32px;
+      --esp-size-xxl: 40px;
+
+      --esp-size-border-radius-lg: 2.5rem;
+      --esp-size-border-radius-md: 2.25rem;
+      --esp-size-border-radius-sm: 2rem;
+      --esp-size-padding-lg: 1.75rem;
+      --esp-size-padding-md: 1.5rem;
+      --esp-size-padding-sm: 1.25rem;
+      --esp-size-padding-xs: 1rem;
+      --esp-size-margin-lg: 0.75rem;
+      --esp-size-margin-md: 0.5rem;
+      --esp-size-margin-sm: 0.375rem;
+      --esp-size-margin-xs: 0.25rem;
+      --esp-size-gap: 0.125rem;
+
+      /* Shadows & Effects */
+      --esp-transition-ease: all 0.3s ease-in-out;
+      --esp-transition-slow: 0.4s ease-in-out;
+
+      /* Font Family */
+      --esp-font-family: 'TwilioSansText', 'Inter var experimental', 'Inter var', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+      /* Font Weights */
+      --esp-font-weight-heavy: 900;
+      --esp-font-weight-extrabold: 800;
+      --esp-font-weight-bold: 700;
+      --esp-font-weight-semibold: 600;
+      --esp-font-weight-medium: 500;
+      --esp-font-weight-normal: 450;
+      --esp-font-weight-light: 300;
+      --esp-font-weight-extralight: 200;
+
+      /* Font Sizes */
+      --esp-font-size-xxl: 2rem;
+      --esp-font-size-xl: 1.75rem;
+      --esp-font-size-lg: 1.5rem;
+      --esp-font-size-md: 1.25rem;
+      --esp-font-size-sm: 1rem;
+      --esp-font-size-xs: 0.875rem;
+      --esp-font-size-xxs: 0.75rem;
+
+      /* Line Heights */
+      --esp-line-height-lg: 1.6;
+      --esp-line-height-md: 1.4;
+      --esp-line-height-sm: 1.2;
+
+      /* Border Radius */
+      /* Use this border radius for pill-shaped elements */
+      --esp-border-radius-full: 624.9375rem;
+      --esp-border-radius-xl: 1.5rem;
+      --esp-border-radius-lg: 1rem;
+      --esp-border-radius-md: 0.5rem;
+      --esp-border-radius-sm: 0.25rem;
+
+      /* Border Width */
+      --esp-border-width-thicker: max(4px, 0.25rem);
+      --esp-border-width-thick: max(2px, 0.125rem);
+      --esp-border-width-thin: max(1px, 0.0625rem);
+
+      /* Border Inset */
+      --esp-border-inset-thicker: inset 0 0 0 max(4px, 0.25rem);
+      --esp-border-inset-thick: inset 0 0 0 max(2px, 0.125rem);
+      --esp-border-inset-thin: inset 0 0 0 max(1px, 0.0625rem);
+
+      --esp-color-white: #ffffff;
+}
+
+body {
+      background-color: var(--esp-color-background);
+      color: var(--esp-color-text);
+      font-family: var(--esp-font-family);
+      font-size: var(--esp-font-size-sm);
+      font-weight: var(--esp-font-weight-semibold);
+      line-height: var(--esp-line-height-sm);
+      margin: 0px;
+      padding: var(--esp-size-padding-lg);
+
+      --esp-color-ripple-on-dark: rgba(255, 255, 255, 0.7);
+      --esp-color-ripple-on-light: rgba(0, 0, 0, 0.1);
+
+      --esp-color-primary-hover: color-mix(in srgb, var(--esp-color-primary), var(--esp-color-background) 20%);
+      --esp-color-secondary-hover: color-mix(in srgb, var(--esp-color-secondary), var(--esp-color-background) 20%);
+      --esp-color-error-hover: color-mix(in srgb, var(--esp-color-error), var(--esp-color-background) 20%);
+      --esp-color-background-hover: color-mix(in srgb, var(--esp-color-background), var(--esp-color-background) 5%);
+
+      --esp-color-text-placeholder: color-mix(in srgb, var(--esp-color-text) 50%, transparent);
+      --esp-color-text-disabled: color-mix(in srgb, var(--esp-color-text) 80%, transparent);
+      --esp-color-hover-light: color-mix(in srgb, var(--esp-color-background), var(--esp-color-text) 10%);
+}
