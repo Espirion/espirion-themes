@@ -1,10 +1,8 @@
 name: Release Espirion Themes
 
 on:
-  workflow_dispatch:
-  push:
-    tags:
-      - 'v*.*.*' # Triggers only on Git tags like v1.0.0
+  release:
+    types: [published]  # Trigger when a GitHub release is published
 
 jobs:
   build-and-publish:
