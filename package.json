@@ -1,10 +1,20 @@
 {
-  "name": "espirion-themes",
+  "name": "@espirion/espirion-themes",
   "version": "1.0.0",
+  "main": "dist/espirion-themes.css",
+  "style": "dist/espirion-themes.css",
+  "files": [
+    "dist"
+  ],
+  "unpkg": "dist/",
+  "jsdelivr": "dist/",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "The official theming package for the Espirion Design System. It provides configurable, brand-aligned themes built on top of design tokens and optimized for web components, Angular, and Ionic apps.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build-themes.js"
   },
   "repository": {
     "type": "git",
@@ -13,9 +23,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Espirion/espirion-themes/issues"
   },
-  "homepage": "https://github.com/Espirion/espirion-themes#readme"
+  "homepage": "https://github.com/Espirion/espirion-themes#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.7",
+    "postcss": "^8.5.4",
+    "postcss-cli": "^11.0.1"
+  }
 }

@@ -1,5 +1,5 @@
 /* GitHub Dark Theme for Espirion Design System */
-:root[data-theme="github-dark"] {
+[data-theme="github-dark"] {
   /* ===== Colors ===== */
   --esp-color-background: #0d1117;
   --esp-color-surface: #161b22;
@@ -20,4 +20,5 @@
   --esp-color-border-success: #238636;
   --esp-color-border-warning: #9e6a03;
   --esp-color-border-info: #58a6ff;
+  --color-scheme: "dark";
 }
