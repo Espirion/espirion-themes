@@ -72,3 +72,14 @@
       --esp-text-muted: var(--esp-color-text-secondary);
       --esp-text-disabled: var(--esp-color-text-disabled);
 }
+
+body {
+  background-color: var(--esp-background-base);
+  color: var(--esp-text-base);
+  font-family: var(--esp-font-family);
+  font-size: var(--esp-font-size-base);
+  font-weight: var(--esp-font-weight-semibold);
+  line-height: var(--esp-line-height-base);
+  margin: 0px;
+  padding: var(--esp-spacing-lg);
+}
