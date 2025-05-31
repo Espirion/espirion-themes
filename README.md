@@ -79,4 +79,13 @@ npm install @espirion/espirion-themes
 <body data-theme="github-light">
   <!-- Your app here -->
 </body>
+<body data-theme="github-dark">
+  <!-- Your app here -->
+</body>
+<body data-theme="twilio-light">
+  <!-- Your app here -->
+</body>
+<body data-theme="twilio-dark">
+  <!-- Your app here -->
+</body>
 ```
