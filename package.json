@@ -1,6 +1,6 @@
 {
   "name": "@espirion/espirion-themes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/espirion-themes.css",
   "style": "dist/espirion-themes.css",
   "files": [
