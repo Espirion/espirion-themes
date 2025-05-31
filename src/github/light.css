@@ -1,5 +1,5 @@
 /* GitHub Light Theme for Espirion Design System */
-:root[data-theme="github-light"] {
+[data-theme="github-light"] {
   --esp-color-background: #ffffff;
   --esp-color-surface: #f6f8fa;
   --esp-color-text-primary: #24292f;
@@ -14,4 +14,5 @@
   --esp-color-warning: #ffae42;
   --esp-color-success: #238636;
   --esp-color-info: #0366d6;
+  --color-scheme: "light";
 }
