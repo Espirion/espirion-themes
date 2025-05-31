@@ -25,6 +25,9 @@ jobs:
       - name: Build Themes
         run: npm run build
 
+      - name: Bump patch version
+        run: npm version patch --no-git-tag-version
+
       - name: Publish to NPM
         run: npm publish --access public
         env:
