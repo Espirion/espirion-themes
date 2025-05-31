@@ -1,73 +1,17 @@
 /* GitHub Light Theme for Espirion Design System */
-[data-theme="github-light"] {
-  /* ===== Colors ===== */
-  --esp-color-background: #ffffff; /* Canvas background */
-  --esp-color-surface: #f6f8fa; /* Surface cards/panels */
-  --esp-color-text-primary: #24292f; /* Primary text */
-  --esp-color-text-secondary: #57606a; /* Secondary text */
-  --esp-color-text-placeholder: #959da5; /* Placeholder text */
-  --esp-color-text-disabled: #d1d5da; /* Disabled text */
-  --esp-color-border-default: #d0d7de; /* Default borders */
-  --esp-color-border-muted: #e1e4e8; /* Muted borders */
-  --esp-color-primary: #1f6feb; /* Brand blue (buttons, links) */
-  --esp-color-primary-hover: #1158c7; /* Hover state primary */
-  --esp-color-error: #d73a49; /* Error red */
-  --esp-color-warning: #ffae42; /* Warning yellow */
-  --esp-color-success: #238636; /* Success green */
-  --esp-color-info: #0366d6; /* Info blue */
-
-  /* ===== Typography ===== */
-  --esp-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif;
-  --esp-font-size-base: 14px;
-  --esp-font-size-sm: 12px;
-  --esp-font-size-lg: 18px;
-  --esp-font-weight-normal: 400;
-  --esp-font-weight-semibold: 600;
-  --esp-line-height-base: 1.5;
-
-  /* ===== Spacing ===== */
-  --esp-spacing-xs: 4px;
-  --esp-spacing-sm: 8px;
-  --esp-spacing-md: 16px;
-  --esp-spacing-lg: 24px;
-  --esp-spacing-xl: 32px;
-
-  /* ===== Borders & Radius ===== */
-  --esp-border-radius-sm: 4px;
-  --esp-border-radius-md: 6px;
-  --esp-border-width: 1px;
-  --esp-border-style: solid;
-
-  /* ===== Shadows ===== */
-  --esp-shadow-sm: 0 1px 0 rgb(27 31 36 / 0.04);
-  --esp-shadow-md: 0 3px 6px rgb(140 149 159 / 0.15);
-  --esp-shadow-lg: 0 8px 24px rgb(140 149 159 / 0.2);
-
-  /* ===== Component Tokens ===== */
-  --esp-button-bg: var(--esp-color-primary);
-  --esp-button-bg-hover: var(--esp-color-primary-hover);
-  --esp-button-text: #ffffff;
-  --esp-button-border: transparent;
-  --esp-button-radius: var(--esp-border-radius-md);
-
-  --esp-link-color: var(--esp-color-primary);
-  --esp-link-hover: var(--esp-color-primary-hover);
-
-  --esp-input-bg: var(--esp-color-background);
-  --esp-input-border: var(--esp-color-border-default);
-  --esp-input-text: var(--esp-color-text-primary);
-  --esp-input-placeholder: var(--esp-color-text-placeholder);
-  --esp-input-focus-ring: var(--esp-color-primary);
-
-  --esp-surface-shadow: var(--esp-shadow-sm);
-
-  /* ===== Backgrounds ===== */
-  --esp-background-base: var(--esp-color-background);
-  --esp-surface-base: var(--esp-color-surface);
-
-  /* ===== Text Colors ===== */
-  --esp-text-base: var(--esp-color-text-primary);
-  --esp-text-muted: var(--esp-color-text-secondary);
-  --esp-text-disabled: var(--esp-color-text-disabled);
+:root[data-theme="github-light"] {
+  --esp-color-background: #ffffff;
+  --esp-color-surface: #f6f8fa;
+  --esp-color-text-primary: #24292f;
+  --esp-color-text-secondary: #57606a;
+  --esp-color-text-placeholder: #959da5;
+  --esp-color-text-disabled: #d1d5da;
+  --esp-color-border-default: #d0d7de;
+  --esp-color-border-muted: #e1e4e8;
+  --esp-color-primary: #1f6feb;
+  --esp-color-primary-hover: #1158c7;
+  --esp-color-error: #d73a49;
+  --esp-color-warning: #ffae42;
+  --esp-color-success: #238636;
+  --esp-color-info: #0366d6;
 }

@@ -1,0 +1,77 @@
+@import url('./dark.css');
+@import url('./light.css');
+
+:root {
+      /* ===== Typography ===== */
+      --esp-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+            Arial, sans-serif;
+      --esp-font-size-base: 16px;
+      --esp-font-size-sm: 14px;
+      --esp-font-size-lg: 22px;
+      --esp-font-weight-normal: 400;
+      --esp-font-weight-semibold: 600;
+      --esp-line-height-base: 1.5;
+
+      /* ===== Spacing ===== */
+      --esp-spacing-xxs: 4px;
+      /* A very small spacing unit */
+      --esp-spacing-xs: 8px;
+      --esp-spacing-sm: 12px;
+      --esp-spacing-md: 16px;
+      --esp-spacing-lg: 24px;
+      --esp-spacing-xl: 32px;
+
+      /* ===== Borders & Radius ===== */
+      --esp-border-radius-full: 624.9375rem;
+      /* For pill-shaped elements */
+      --esp-border-radius-lg: 0.75rem;
+      --esp-border-radius-md: 0.375rem;
+      --esp-border-radius-sm: 0.1875rem;
+
+      --esp-border-width-thick: 0.125rem;
+      --esp-border-width-thicker: 0.25rem;
+      --esp-border-width-thin: 0.0625rem;
+
+      --esp-outline-offset: -0.125rem;
+      --esp-outline-width: 0.125rem;
+
+      --esp-border-style: solid;
+
+      /* Transitions */
+      --esp-transition-ease: all 0.2s ease-in-out;
+
+      /* Breakpoints */
+      --breakpoint-large: 63.25rem;
+      --breakpoint-medium: 48rem;
+      --breakpoint-small: 34rem;
+      --breakpoint-xlarge: 80rem;
+      --breakpoint-xsmall: 20rem;
+      --breakpoint-xxlarge: 87.5rem;
+
+      /* ===== Component Tokens ===== */
+      --esp-button-bg: var(--esp-color-primary);
+      --esp-button-bg-hover: var(--esp-color-primary-hover);
+      --esp-button-text: #ffffff;
+      --esp-button-border: transparent;
+      --esp-button-radius: var(--esp-border-radius-md);
+
+      --esp-link-color: var(--esp-color-primary);
+      --esp-link-hover: var(--esp-color-primary-hover);
+
+      --esp-input-bg: var(--esp-color-background);
+      --esp-input-border: var(--esp-color-border-default);
+      --esp-input-text: var(--esp-color-text-primary);
+      --esp-input-placeholder: var(--esp-color-text-placeholder);
+      --esp-input-focus-ring: var(--esp-color-primary);
+
+      --esp-surface-shadow: var(--esp-shadow-sm);
+
+      /* ===== Backgrounds ===== */
+      --esp-background-base: var(--esp-color-background);
+      --esp-surface-base: var(--esp-color-surface);
+
+      /* ===== Text Colors ===== */
+      --esp-text-base: var(--esp-color-text-primary);
+      --esp-text-muted: var(--esp-color-text-secondary);
+      --esp-text-disabled: var(--esp-color-text-disabled);
+}
