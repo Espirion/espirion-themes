@@ -2,7 +2,7 @@ name: Release Espirion Themes
 
 on:
   release:
-    types: [published]  # Trigger when a GitHub release is published
+    types: [published] # Trigger when a GitHub release is published
 
 jobs:
   build-and-publish:
@@ -12,6 +12,7 @@ jobs:
       - name: 🔄 Checkout repo
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PAT_TOKEN }}
           fetch-depth: 0 # Required to access tags
 
       - name: 🟢 Setup Node
